@@ -11,7 +11,7 @@ DATABASE = os.environ.get(
     "DB_URI", f"sqlite:///{os.path.join(BASE_DIR, 'app.db')}")
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://vendorsweetapplication_user:xcyO5P1KInHQApzRgQ0TCzcGbQKdZuC8@dpg-cohpi0ol5elc73cruit0-a.oregon-postgres.render.com/vendorsweetapplication"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
